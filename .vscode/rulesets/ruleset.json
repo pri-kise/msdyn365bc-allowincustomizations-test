@@ -1,0 +1,46 @@
+{
+    "name": "PTE Ruleset",
+    "description": "PTE Code Rules",
+    "includedRuleSets": [
+        {
+            "action": "Error",
+            "path": "./Analyzer.ruleset.json"
+        },
+        {
+            "action": "Error",
+            "path": "./AppSourceCop.ruleset.json"
+        },
+        {
+            "action": "Error",
+            "path": "./CodeCop.ruleset.json"
+        },
+        {
+            "action": "Error",
+            "path": "./Compiler.ruleset.json"
+        },
+        {
+            "action": "Error",
+            "path": "./PTECop.ruleset.json"
+        },
+        {
+            "action": "Error",
+            "path": "./UICop.ruleset.json"
+        },
+        {
+            "action": "Error",
+            "path": "./BCLinterCop.ruleset.json"
+        }
+    ],
+    "rules": [
+        {
+            "id": "AS0051",
+            "action": "None",
+            "justification": "Disabled for Customer/PTE Apps: The manifest property 'contextSensitiveHelpUrl' must be specified and contain a meaningful value."
+        },
+        {
+            "id": "AS0084",
+            "action": "None",
+            "justification": "Disabled for PTE Apps: Cloud ID Range"
+        }
+    ]
+}
